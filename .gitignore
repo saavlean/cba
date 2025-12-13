@@ -1,0 +1,42 @@
+cat <<'EOF' > .gitignore
+# ===== Dependencies =====
+node_modules/
+venv/
+.env
+.env.*
+
+# ===== Build / Output =====
+.next/
+dist/
+build/
+out/
+coverage/
+
+# ===== Terraform =====
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfplan
+crash.log
+
+# ===== Logs =====
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ===== OS / Editors =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== Archives / Backups =====
+*.zip
+*.tar
+*.tar.gz
+
+# ===== Claude Code (optional) =====
+.claude/
+EOF
